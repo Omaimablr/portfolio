@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Project filtering functionality
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 
@@ -7,11 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', function() {
             const filterValue = this.getAttribute('data-filter');
 
-            // Update active button
+    
             filterBtns.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
 
-            // Filter projects
+    
             projectCards.forEach(card => {
                 const category = card.getAttribute('data-category');
 
@@ -30,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -44,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Contact form submission
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {

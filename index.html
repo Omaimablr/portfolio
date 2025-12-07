@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="script.js">
 </head>
 <body>
-    <!-- Navigation -->
+    
     <nav class="navbar">
         <div class="container">
             <div class="logo">My Portfolio</div>
@@ -21,58 +22,75 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
             <h1>Welcome to My Portfolio</h1>
-            <p>Full Stack Developer | Creative Problem Solver</p>
+            <p>Ingénieur d'état</p>
             <button class="cta-btn">Get Started</button>
         </div>
     </section>
 
-    <!-- About Section -->
+    
     <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Add your bio and background information here.</p>
+            <p> Développeuse web passionnée. je m efforce d améliorer constamment<br>
+ mes compétences et de relever  des défis techniques. Engagée et<br>
+ curieuse, je veille à produire un code propre et optimisé, tout en restant<br>
+ à jour sur les nouveautés du secteur. Le travail en équipe et la<br>
+ collaboration sont essentiels pour moi, et je suis motivée par<br>
+ l apprentissage continu dans cet environnement en évolution.</p>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <h2>My Projects</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card show" data-category="web">
                     <h3>Project 1</h3>
-                    <p>Project description here</p>
+                    <p>Web development project description</p>
                 </div>
-                <div class="project-card">
+                <div class="project-card show" data-category="web">
                     <h3>Project 2</h3>
-                    <p>Project description here</p>
+                    <p>Web development project description</p>
                 </div>
-                <div class="project-card">
+                <div class="project-card show" data-category="mobile">
                     <h3>Project 3</h3>
-                    <p>Project description here</p>
+                    <p>Mobile app project description</p>
+                </div>
+                <div class="project-card show" data-category="design">
+                    <h3>Project 4</h3>
+                    <p>Design project description</p>
+                </div>
+                <div class="project-card show" data-category="mobile">
+                    <h3>Project 5</h3>
+                    <p>Mobile app project description</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <h2>Skills</h2>
             <ul class="skills-list">
                 <li>HTML & CSS</li>
                 <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
+                <li>PHP</li>
+                <li>C,CPP</li>
             </ul>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Me</h2>
@@ -85,7 +103,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 My Portfolio. All rights reserved.</p>
